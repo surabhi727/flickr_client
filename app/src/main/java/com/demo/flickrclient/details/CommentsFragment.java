@@ -144,7 +144,7 @@ public class CommentsFragment extends BottomSheetDialogFragment implements Loade
 
     @Override
     public Loader<FlickrResponse> onCreateLoader(int id, Bundle args) {
-        return new LoginTask(
+        return new AddCommentTask(
                 getContext(),
                 getActivity().getSupportFragmentManager(),
                 mPhotoId,
@@ -155,6 +155,7 @@ public class CommentsFragment extends BottomSheetDialogFragment implements Loade
     public void onLoadFinished(Loader<FlickrResponse> loader, FlickrResponse data) {
         if(data != null && data.getStat().equals("ok")) {
             fetchPhotoDetails(mPhotoId);
+            mAddCommentView.setText("");
         }
     }
 
@@ -163,13 +164,13 @@ public class CommentsFragment extends BottomSheetDialogFragment implements Loade
 
     }
 
-    static class LoginTask extends AsyncTaskLoader<FlickrResponse> {
+    static class AddCommentTask extends AsyncTaskLoader<FlickrResponse> {
 
         private final OAuth mOauth;
         private final String mPhotoId;
         private final String mComment;
 
-        LoginTask(Context context, FragmentManager manager, String photoId, String comment) {
+        AddCommentTask(Context context, FragmentManager manager, String photoId, String comment) {
             super(context);
             mPhotoId = photoId;
             mComment = comment;

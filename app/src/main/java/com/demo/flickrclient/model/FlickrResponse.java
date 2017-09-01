@@ -1,11 +1,10 @@
 
 package com.demo.flickrclient.model;
 
-import com.google.api.client.json.GenericJson;
 import com.google.api.client.json.JsonString;
 import com.google.api.client.util.Key;
 
-public abstract class FlickrResponse {
+public class FlickrResponse {
 
     @Key("stat")
     private String stat;
