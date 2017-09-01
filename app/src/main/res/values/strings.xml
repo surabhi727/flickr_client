@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FlickrClient</string>
+    <string name="token_flickr">flickr</string>
+    <string name="comments_text">(%s) comments</string>
+    <string name="views_text">(%s) views</string>
+    <string name="add_comment_hint">Add comment</string>
+    <string name="comment_header">Comments</string>
+    <string name="flickr_api_error">Error while loading comments.</string>
+    <string name="no_internet_error">Internet connection not available.</string>
+</resources>

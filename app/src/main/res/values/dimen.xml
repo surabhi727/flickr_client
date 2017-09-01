@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_list_photo_height">220dp</dimen>
+    <dimen name="text_padding">12dp</dimen>
+    <dimen name="photo_list_header_text_size">20sp</dimen>
+    <dimen name="photo_details_header_height">300dp</dimen>
+    <dimen name="photo_details_padding">16dp</dimen>
+    <dimen name="user_name_text_size">18sp</dimen>
+    <dimen name="user_image_size">48dp</dimen>
+    <dimen name="photo_details_text_size">20sp</dimen>
+    <dimen name="comments_text_size">20sp</dimen>
+</resources>
