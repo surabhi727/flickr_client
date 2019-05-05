@@ -38,6 +38,8 @@ class CommentListAdapter extends RecyclerView.Adapter<CommentListAdapter.Comment
     @Override
     public int getItemViewType(int position) {
         return super.getItemViewType(position);
+
+
     }
 
 
@@ -50,6 +52,9 @@ class CommentListAdapter extends RecyclerView.Adapter<CommentListAdapter.Comment
     @Override
     public int getItemCount() {
         return (null != mComments ? mComments.size() : 0);
+
+
+
     }
 
     class CommentViewHolder extends RecyclerView.ViewHolder {
